@@ -11,7 +11,7 @@ var (
 )
 
 func ConnectDB() {
-	dsn := "root:JotaL1213@@tcp(localhost:3306)/empregUFU?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "user:pass@tcp(localhost:3306)/empregUFU?charset=utf8mb4&parseTime=True&loc=Local"
   	d, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 
